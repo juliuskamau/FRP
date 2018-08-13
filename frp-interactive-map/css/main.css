@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+  font-size: 14px;
+}
+
+#panel {
+  float: left;
+  width: 300px;
+  height: 550px;
+  padding-top: 15px;
+}
+
+#map-container {
+  margin-left: 300px;
+}
+
+#map {
+  width: 100%;
+  height: 550px;
+}
+
+.map-holder {
+  border: 1px solid #b4d0b4;
+}
+
+#markerlist {
+  height: 400px;
+  margin: 10px 5px 0 10px;
+  overflow: auto;
+}
+
+.title {
+  border-bottom: 1px solid #e0ecff;
+  overflow: hidden;
+  width: 256px;
+  cursor: pointer;
+  padding: 2px 0;
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.title:visited {
+  color: #000;
+}
+
+.title:hover {
+  background: #e0ecff;
+}
+
+#timetaken {
+  color: #f00;
+}
+
+.info {
+  width: 200px;
+  margin-bottom:  10px;
+}
+
+.info img {
+  height: auto;
+  width: 200px;
+  border: 1px solid #eee; 
+  margin-bottom:  6px;
+  box-sizing: border-box;
+}
+
+.info-body { 
+  /*line-height: 200px;*/
+  margin: 2px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.info-blurb {
+  margin: 6px 0 6px 0;
+  text-align: left; 
+  padding-bottom: 10px;
+} 
+
+.info-read-more {
+  padding: 8px 12px;
+  background-color: #f69d01;
+  color: darkgreen;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.info-title {
+  margin-top: 2px;
+  margin-bottom: 4px;
+}
+
+#inline-actions {
+  padding-left: 10px;
+}
+
+#competition {
+  padding: 4px 8px;
+  border: 1px solid #b4d0b4;
+}

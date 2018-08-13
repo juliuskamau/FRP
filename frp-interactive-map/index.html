@@ -1,0 +1,55 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>MarkerClusterer v3 Example</title>
+
+    <style type="text/css">
+
+
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false&key=AIzaSyB3pJ9uU1QqoS1eYctpULtWdyGg2fhA15g"></script>
+    <script type="text/javascript" src="json/grantee_data.json"></script>
+    <script type="text/javascript" src="js/markerclusterer.js"></script>
+    <!-- <script type="text/javascript" src="js/speed_test.js"></script> -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </head>
+  <body onload="initialize();">
+    <div class="map-holder">
+      <div id="panel">
+        <!-- <h3>Supported projects</h3> -->
+        
+        <div id="inline-actions">
+          <span>Competition
+            <select id="competition">
+              <option value="All">All</option>
+              <option value="Innovation Round 1">Innovation Round 1</option>
+              <option value="Scaling Round 1">Scaling Round 1</option>
+              <option value="Innovation Round 2">Innovation Round 2</option>
+              <option value="Scaling Round 2">Scaling Round 2</option> 
+            </select>
+
+          </span>
+        </div>
+
+        <!-- <div>
+           <input id="refresh" type="button" value="Refresh Map" class="item"/>
+           <a href="#" id="clear">Clear</a>
+        </div>  -->
+
+        <div id="markerlist">
+          
+        </div>
+        <div id="nummarkers">
+          
+        </div>
+      </div>
+      <div id="map-container">
+        <div id="map"></div>
+      </div>
+    </div>
+  </body>
+</html>
