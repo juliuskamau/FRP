@@ -28,6 +28,9 @@ url("../fonts/ProximaNova-Regular.svg#Montserrat") format("svg");
 *{
 	margin:0px;
 }
+body,html{
+    overflow-x: hidden;
+}
 body{
 	background-color: #fff;
 	background-repeat:no-repeat;
@@ -39,9 +42,133 @@ body{
 p{
     text-align: justify;
 }
+/***============ map css ============****/
+#inline-actions select{
+    height: 3rem;
+    border-radius: 3px;
+    background: white;
+    color: #808080;
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 0 0 1rem;
+    padding: .5rem;
+    border: 1px solid #cacaca;
+ 
+}
 
+  #map {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+  
+  }
+  
+  
+  
+  .map-holder {
+    border: 1px solid #b4d0b4;
+  }
+  
+  
+  
+  #markerlist {
+    height: 400px;
+    overflow: auto;
+  }
+  
+  
+  
+  .title {
+    border-bottom: 1px solid #e0ecff;
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    padding: 10px 0;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 0px;;
+  }
+  
+  
+  
+  .title:visited {
+    color: #2B5034;
+  }
+  
+  
+  
+  .title:hover {
+    color: #2B5034;
+  }
+  
+  
+  
+  #timetaken {
+    color: #f00;
+  }
+  
+  
+  .info {
+    width: 200px;
+    margin-bottom:  10px;
+  }
+  
+  
+  
+  .info img {
+    height: auto;
+    width: 200px;
+    border: 1px solid #eee; 
+    margin-bottom:  6px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .info-body { 
+
+    margin: 2px 0;
+    text-align: center;
+    overflow: hidden;
+  
+  }
+  
+  
+  
+  .info-blurb {
+    margin: 6px 0 6px 0;
+    text-align: left; 
+    padding-bottom: 10px;
+  } 
+  
+  
+  
+  .info-read-more {
+
+    padding: 8px 12px;
+    background-color: #f69d01;
+    color: darkgreen;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  
+ 
+  
+  
+
+  
+  
+  
+  
 /***============ nav css ============****/
-.navbar-brand img{width: 210px}
+.navbar-brand img{
+    width: 210px;
+    max-width: 100%;
+    height: auto;
+}
 .navbar-nav{padding-left: 60px; padding-top:20px;}
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{color:#FBA81B;}
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
@@ -294,8 +421,14 @@ font-family:'ProximaNova-Black' !important;
 font-weight:normal;
 }
 
+.wrapper-widget{
+    padding-right: 20px;
+    padding-left: 20px;
+}
 /***============ current ============****/
-.current{margin-top: 30px;}
+.current{
+    margin-top: 30px;
+}
 .current .col-md-12{
     padding-left: 0px;
     padding-right: 0px;
@@ -396,7 +529,7 @@ font-weight:normal;
     color: #2B5034;
     padding: 10px 0 10px 0;
     font-family: 'ProximaNova-Black' !important;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     }
 
 .socialfeed h6{
@@ -611,8 +744,33 @@ ul.winnerslist{
     border-left: #2B5034 solid 5px;
         
 }
-.support img{
-    width: 100%
+.carousel.slide.support .col-md-3{
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.competition .carousel.slide.support .col-md-3 img{
+margin: 0px;
+}
+
+.support .carousel-control-next-icon, .support .carousel-control-prev-icon{
+    width: 50px;
+    height: 50px;
+    background-color: #000;
+    background-size: 20px;
+}
+
+.support .carousel-control-next-icon{
+    border-radius: 30px 0px 0px 30px;
+}
+
+.support .carousel-control-prev-icon{
+    border-radius: 0px 30px 30px 0px;
+}
+.support .carousel-control-prev {
+    left: -42px;
+}
+.support .carousel-control-next {
+    right: -42px;
 }
 .left{border:solid 1px #295135;}
 .left ul{padding-left: 15px}
@@ -663,3 +821,56 @@ ul.winnerslist{
     margin-top: 20px;
 }
 
+/***============ PLEASE BUT ALL MOBILE,IPAD STYLE OVERWRITE HERE  ============****/
+
+@media only screen and (max-width: 1100px) {
+
+    .navbar-collapse{
+        position: relative;
+    }
+    .navbar-nav{
+        position: absolute;
+        background: white;
+        z-index: 99;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+       /* margin-left: 1rem;*/
+       -moz-box-shadow: 0 0 7px 0px #333;
+       -webkit-box-shadow: 0 0 7px 0px #333;
+       box-shadow: 0 0 7px 0px #333;
+    }
+    .fund .col-md-2{
+        width: 100%;
+    }
+
+    .navbar-light .navbar-toggler {
+        border: none;
+        background: #DA1B24;
+        border-radius: 0px;
+        margin-right: 1rem;
+    }
+    .navbar{
+
+        width: 100%;
+        padding: 10px 0px 10px 0px;
+        -moz-box-shadow: 0 0 7px 0px #333;
+        -webkit-box-shadow: 0 0 7px 0px #333;
+        box-shadow: 0 0 7px 0px #333;
+    }
+    .navbar-brand{
+        margin-left: 1rem;
+    }
+    .navbar-nav .dropdown-menu{
+width: 100%;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        border-bottom: solid 1px #ddd;
+        text-transform: none;
+        font-size: 13px;
+        padding: 10px 20px;
+    }
+    .navbar-brand img{
+        width: 150px;
+    }
+}
